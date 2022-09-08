@@ -6,11 +6,13 @@
 */
 int main(void)
 {
-	char myString[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+	char myString[] = "and that piece of art is useful\"\
+			   - Dora Korpar, 2015-10-19\n";
 	int i = 0;
-	for(i = 0; myString[i] != '\0'; i++)
+
+	for (i = 0; myString[i] != '\0'; i++)
 	{
-        	putchar(myString[i]);
-    	}
-    	return (0);
+		putchar(myString[i]);
+	}
+	return (1);
 }
