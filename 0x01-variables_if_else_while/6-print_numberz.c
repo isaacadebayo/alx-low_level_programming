@@ -1,4 +1,4 @@
-#include <stdlib.h>
+i#include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
@@ -9,11 +9,11 @@
 
 int main(void)
 {
-	char n = '0';
+	int n = 0;
 
-	while (n <= '9')
+	while (n <= 9)
 	{
-		putchar(n);
+		putchar('0' + n);
 		n++;
 	}
 	putchar('\n');
