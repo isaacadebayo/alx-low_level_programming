@@ -14,10 +14,12 @@ int main(void)
 	while (n <= 9)
 	{
 		putchar('0' + n);
-		putchar(',');
-		putchar(' ');
-		n++;
-	}
+		if (n != 9)
+		{
+			putchar(',');
+			putchar(' ');
+			n++;
+		}
 	putchar('\n');
 	return (0);
 }
