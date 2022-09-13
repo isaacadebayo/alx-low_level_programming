@@ -10,22 +10,21 @@
  */
 
 int _sign(int n)
-{
+{	int retval;
 	if (n > 0)
 	{
 		_putchar('+');
-		return (1);
+		retval = 1;
 	}
 	if (n ==  0)
 	{
 		_putchar('0');
-		return (0);
+		retval = 0;
 	}
 	if (n <  0)
 	{
 		_putchar('-');
-		return (-1);
+		retval = -1;
 	}
-
-
+	return (retval);
 }
