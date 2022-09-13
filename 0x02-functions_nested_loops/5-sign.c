@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *_sign -  Write a function that prints the sign of a number.
+ *print_sign -  Write a function that prints the sign of a number.
  *@n: input character to the function
  *Returns 1 and prints + if n is greater than zero
  *Returns 0 and prints 0 if n is zero
@@ -9,7 +9,7 @@
  *Return: -1, 0, 1
  */
 
-int _sign(int n)
+int print_sign(int n)
 {	int retval;
 	if (n > 0)
 	{
