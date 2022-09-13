@@ -6,7 +6,7 @@
  *Return: the program returns 0
  */
 
-int _islowe(int c)
+int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		return (1);
