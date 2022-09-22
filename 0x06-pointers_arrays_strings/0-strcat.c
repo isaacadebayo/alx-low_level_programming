@@ -1,32 +1,32 @@
 #include "main.h"
 
 /**
- * *_strcat - function concatenate srtings
- * @str: param pointer to the string to get length
- * @dest: param pointer to destination string
- * @src: param pointer to source string
+ * *_strcat - function commute srtings
+ * @dest: param pointer to a char
+ * @src: param pointer to a char
  * Return: return value of dest
  */
 
-int _strlen(char *str)
-{
-	int i = 0;
-
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
-
 char *_strcat(char *dest, char *src)
 {
-	int deslen = 0;
-	int srclen = 0;
-	int i = 0;
+	int i;
+	int j;
 
-	deslen = _strlen(dest);
-	srclen = _strlen(src);
-	for (i = 0; i < srclen; i++)
-		dest[deslen + i] = src[i];
-	dest[_strlen(dest)] = '\0';
+	i = 0;
+	j = 0;
+
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		j++;
+		i++;
+	}
+
+	dest[i] = '\0';
 	return (dest);
 }
