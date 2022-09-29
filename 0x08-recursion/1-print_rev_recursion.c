@@ -7,24 +7,7 @@
 
 void _print_rev_recursion(char *s)
 {
-	static int count;
-	static int reverse;
-
-	if ((*s != '\0') && (reverse == 0))
-	{
-		count++;
+	if (*s != '\0')
 		_print_rev_recursion(s + 1);
-	}
-	else
-	{
-		if (count >= 0)
-		{
-			reverse = 1;
-			count--;
-			_putchar(*s);
-			_print_rev_recursion(s - 1);
-		}
-		else
-			return;
-	}
+	_putchar(*s);
 }
